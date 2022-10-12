@@ -1,0 +1,16 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          auth0:
+            client-id: EMrDGU4EtNpG5A6E7Ko2HBmddNzjZlXc
+            client-secret: 9eDT_76l1wZRtpQj59SVBHwyITZntUduf-E2HOvMqnfch8mMnsZ2vRdpPefjH1l4
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          auth0:
+            # trailing slash is important!
+            issuer-uri: https://dev-833pwx9n.us.auth0.com/

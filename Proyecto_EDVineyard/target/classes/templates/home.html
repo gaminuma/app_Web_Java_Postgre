@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ED Vineyard</title>
+        <link rel="shortcut icon" th:href="@{../images/robot.png}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link th:href="@{../css/home.css}" rel="stylesheet">
+    </head>
+    <body>
+        <!--Estas son pruebas únicamente-->
+        
+        <header>
+            <div class="container">
+                <h3>ROBOTROOT - HURLBIZ</h3>
+                <nav>
+                    <a href="/home">Home</a>
+                    <a href="/enterprises/movements">Ingresos y egresos</a>
+                    <a href="/users">Usuarios</a>
+                    <a href="/enterprises">Empresas aliadas</a>
+                    <a th:href="@{/logout}">Salir</a>
+                </nav>
+            </div>
+        </header>
+
+        <section id="opciones">
+            <div class="imagen"></div>
+            <div class="container">
+                <div class="opc-cartas">
+                        <div class="carta">
+                        <h3>Ingresos-Egresos</h3>
+                        <p>En este espacio podrás acceder a consultar, modificar, eliminar o agregar movimientos de dinero a la empresa.</p>
+                        <a href="/enterprises/movements"><button>+ Info</button></a>
+                    </div>
+                    <div class="carta">
+                        <h3>Usuarios</h3>
+                        <p>En este espacio podrás acceder a consultar, modificar, eliminar o agregar empleados a la empresa.</p>
+                        <a href="/users"><button>+ Info</button></a>
+                        
+                    </div>
+                    <div class="carta">
+                        <h3>Alianzas</h3>
+                        <p>En este espacio podrás gestionar las empresas con las cuales tenemos convenios dentro de nuestra organización.</p>
+                        <a href="/enterprises"><button>+ Info</button></a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy;ROBOTROOT - HURLBIZ 2022</p>
+            </div>
+        </footer>
+    </body>
+</html>
